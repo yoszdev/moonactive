@@ -10,15 +10,9 @@ app.use(json());
 app.use(cors());
 app.use("/api", promotionsRouter);
 
-//todo health check
-// app.get("/", async (req: express.Request, res: express.Response) => {
-//   const connection = await mongoConnect();
-//   await fetchDataFromPromotionsCollection(connection, {
-//     pageNumber: 1,
-//     limit: 20,
-//   });
-//   res.send("Welcome to Express & TypeScript Server");
-// });
+app.get("/health", (req, res) => {
+  res.status(200).json({ status: "ok" });
+});
 
 app.listen(port, () => {
   console.log(`Server is Running at http://localhost:${port}`);
