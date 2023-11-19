@@ -1,15 +1,13 @@
 import React from "react";
 import Logo from "./components/Logo";
-import { PromotionsTable } from "./components/PromotionsTable";
 import "./App.css";
-import { InfiniteScrollTable } from "./components/PromostionsTableV2";
+import { PromotionsTable } from "./components/promotions/PromotionsTable";
 
 const App = () => {
   return (
     <div className="App">
       <Logo />
-      <InfiniteScrollTable />
-      {/*<PromotionsTable />*/}
+      <PromotionsTable />
     </div>
   );
 };

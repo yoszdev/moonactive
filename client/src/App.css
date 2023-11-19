@@ -5,14 +5,11 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   background: -webkit-linear-gradient(left, #04164f, black);
   background: linear-gradient(to right, #04164f, black);
   color: white;
   font-family: 'Roboto', sans-serif;
 }
-
 
 h1 {
   font-size: 30px;
@@ -59,9 +56,8 @@ section{
 }
 
 .logo {
-  position: absolute;
-  top: 30px;
-  left: 30px;
+  display: flex;
+  padding: 25px;
 }
 .logo img {
   width: 150px;
